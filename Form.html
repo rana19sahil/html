@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/html%20learning/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<body>
+    <form action="http://127.0.0.1:5500/html%20learning/form.html" method="post">
+        <label>Name</label> 
+        <input type="text" name="fname" value="" placeholder="Sahil Rana"> <br><br>
+        
+        <label>Password</label>
+        <input type="password" name=""> <br><br>
+       
+        <label>Gender</label>
+        <input type="radio" name="Gender" id="Male"><label for="Male">Male</label><input type="radio" name="Gender" id="Female"><label for="Female">Female</label> <br><br>
+        
+        <label>Hobbies</label>
+        <input type="checkbox" name="Hobby" id="batbol"><label for="batbol">Cricket</label> <input type="checkbox" name="Hobby" id="BGMI"><label for="BGMI">Video Gaming</label> <br><br>
+        
+        <label>Massage</label>
+        <textarea rows="5" cols="30">Write ur valauable feedback.....</textarea> <br><br>
+        
+        <label>Country</label>
+        <select name="" size="" **multiple="">
+                 <option value="IN">India</option>
+                 <option value="PK">Pakistan</option>
+                 <option value="USA" selected="">America</option>
+                 </select>
+                 <br><br>                                                   
+        <label>Cars</label>
+                <select>
+                 <optgroup label="Toyota">
+                 <option>Innova</option>
+                 <option>Etios</option>
+                 <option>Fortuner</option>
+                 </optgroup>
+                 <optgroup label="Renault">
+                 <option>Kwid</option>
+                 <option>Duster</option>
+                 <option>Captur</option>
+                 </optgroup>
+                </select>
+                <br><br>
+        <label>Cars</label>
+        <input list="cars">					
+                 <datalist id="cars">
+                 <option value="Innova">
+                 </option><option value="Kwid">
+                 </option><option value="Etios">
+                 </option><option value="Swift">
+                 </option><option value="Duster">
+                 </option></datalist>                                   
+                 <br><br>		
+        <label>Upload File</label>
+        <input type="file" accept="video/*" name="">
+        </form>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
